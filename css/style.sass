@@ -1,0 +1,137 @@
+$MainBody: #dde0e9
+$HeaderFooter: #bea7ee
+$Botton: #bdb1b4
+*
+  box-sizing: border-box
+  margin: 0% 0.5%
+
+body
+  background: $MainBody
+  font-family: sans-serif
+  @media (max-width: 600px)
+      font-size: 70%
+
+.header
+  display: flex
+  background: cornflowerblue
+  flex-direction: row
+  position: relative
+  height: 27vh
+  min-height: 70px
+.text
+    width: 50%
+    margin: 2%
+    font-size: 16px
+    line-height: 0.2
+    padding-top: 20px
+    padding-left: 40px
+    @media (max-height: 600px)
+        font-size: 8px
+        line-height: 0.1
+        padding-top: 0px
+    h1, h3
+      padding: 10px 0px 20px 0px
+
+.img_head
+  position: absolute
+  right: 0px
+  margin: 0px
+  max-width: 70%
+.img
+  height: 27vh
+  min-height: 70px
+
+.nav-bar
+  background: $HeaderFooter
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  padding: 20px
+  border: 1px black dotted
+  color: black
+  margin: 10px
+  li
+    border-right: 2px black dotted
+    flex-grow: 1
+    text-align: center
+    list-style: none
+    li:last-child
+      border-right: none
+    a
+      color: black
+      text-decoration: none
+main
+  display: flex
+  p
+    padding-top: 10px
+  h1, h3
+    padding: 10px 0px 20px 0px
+  h1
+    font-weight: normal
+  a
+    text-decoration: none
+    color: black
+  li
+    list-style: none
+  .description
+    display: flex
+    max-width: 80%
+    flex-wrap: wrap
+  .welcome, .introductions
+    width: 47%
+    margin: 30px 10px
+  .introductions
+    border-right: 1px grey solid
+    padding-right: 15px
+    @media (max-width: 1000px)
+      .introductions
+        border-width: 0px
+        width: 100%
+        padding: 0px
+        margin: 10px 0px
+  .welcome
+    padding-left: 15px
+    @media (max-width: 1000px)
+      width: 100%
+      padding: 0px
+      margin: 10px 0px
+  .s_about
+    section
+      h1
+        border-bottom: 1px grey solid
+  .btn
+    display: block
+    border: 1px grey solid
+    background: $Botton
+    margin-top: 10px
+    padding: 15px
+    width: 70px
+    text-align: center
+    cursor: pointer
+  .menu
+    width: 20%
+    .menu_iteam
+      margin: 0
+      padding: 0
+      padding-top: 5px
+      a
+        line-height: 20px
+        color: purple
+  .Resource
+    margin-top: 10px
+    p
+      margin-bottom: 20px
+footer
+  display: block
+  background: $HeaderFooter
+  margin: 15px
+  height: 5vh
+  font-size: 12px
+  text-align: center
+  line-height: 2.5vh
+  a
+    text-decoration: none
+  p
+    color: black
+    padding-top: 10px
